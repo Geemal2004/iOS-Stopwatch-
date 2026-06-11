@@ -22,15 +22,15 @@ jobs:
         run: sudo xcode-select -s /Applications/Xcode_15.4.app
 
       # Step 3: Build the application archive
-      # Replace 'YourProjectName' with the actual name of your .xcodeproj/target
+      # Replace 'Stopwatch' with the actual name of your .xcodeproj/target
       - name: Build Archive
         run: |
           xcodebuild archive \
-            -project YourProjectName.xcodeproj \
-            -scheme YourProjectName \
+            -project Stopwatch.xcodeproj \
+            -scheme Stopwatch \
             -configuration Release \
             -sdk iphoneos \
-            -archivePath $RUNNER_TEMP/YourProjectName.xcarchive \
+            -archivePath $RUNNER_TEMP/Stopwatch.xcarchive \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO
 
@@ -38,9 +38,9 @@ jobs:
       - name: Export .ipa
         run: |
           mkdir -p $RUNNER_TEMP/Payload
-          cp -r $RUNNER_TEMP/YourProjectName.xcarchive/Products/Applications/*.app $RUNNER_TEMP/Payload/
+          cp -r $RUNNER_TEMP/Stopwatch.xcarchive/Products/Applications/*.app $RUNNER_TEMP/Payload/
           cd $RUNNER_TEMP
-          zip -r YourProjectName.ipa Payload
+          zip -r Stopwatch.ipa Payload
 
       # Step 5: Upload the generated .ipa so you can download it on Windows
       - name: Upload Build Artifact

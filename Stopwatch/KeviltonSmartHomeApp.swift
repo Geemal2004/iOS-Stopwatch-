@@ -6,10 +6,7 @@ struct KeviltonSmartHomeApp: App {
     @StateObject private var authViewModel = AuthViewModel()
 
     init() {
-        TuyaService.shared.initialize(
-            appKey: Bundle.main.object(forInfoDictionaryKey: "THING_SMART_APPKEY") as? String ?? "",
-            secretKey: Bundle.main.object(forInfoDictionaryKey: "THING_SMART_SECRET") as? String ?? ""
-        )
+        TuyaService.shared.initialize()
     }
 
     var body: some Scene {

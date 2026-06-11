@@ -1,5 +1,7 @@
 import Foundation
+#if canImport(ThingSmartHomeKit)
 import ThingSmartHomeKit
+#endif
 
 class DeviceService {
     static let shared = DeviceService()
@@ -7,6 +9,7 @@ class DeviceService {
     private init() {}
 
     func fetchDevices(for homeId: Int64, completion: @escaping ([Device]) -> Void) {
+        #if canImport(ThingSmartHomeKit)
         let home = ThingSmartHome(homeId: homeId)
         home?.getHomeDetail({
             guard let homeModel = home?.homeModel else {
@@ -18,8 +21,12 @@ class DeviceService {
         }, failure: { _ in
             completion([])
         })
+        #else
+        completion([])
+        #endif
     }
 
+    #if canImport(ThingSmartHomeKit)
     private func mapToDevice(_ model: ThingSmartDeviceModel, homeId: Int64) -> Device? {
         let type = DeviceType(rawValue: model.deviceType?.lowercased() ?? "") ?? .unknown
         return Device(
@@ -34,6 +41,7 @@ class DeviceService {
             homeId: homeId
         )
     }
+    #endif
 }
 
 class HomeCacheService {

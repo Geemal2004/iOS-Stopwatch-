@@ -10,8 +10,7 @@ struct LoadingView: View {
         ZStack {
             AppTheme.background.ignoresSafeArea()
 
-            Image("ic_logo")
-                .resizable()
+            AppImage("ic_logo")
                 .scaledToFit()
                 .frame(width: 200)
                 .opacity(opacity)

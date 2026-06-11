@@ -45,9 +45,9 @@
 		<false/>
 	</dict>
 	<key>THING_SMART_APPKEY</key>
-	<string>$(THING_SMART_APPKEY)</string>
+	<string>$(f4p7sv5uhaecj3qkyaar)</string>
 	<key>THING_SMART_SECRET</key>
-	<string>$(THING_SMART_SECRET)</string>
+	<string>$(jj4mk84mrq7sf3ux9cpy7vfrf77qtu7p)</string>
 	<key>com.google.android.geo.API_KEY</key>
 	<string>$(GOOGLE_MAPS_API_KEY)</string>
 	<key>NSLocationWhenInUseUsageDescription</key>

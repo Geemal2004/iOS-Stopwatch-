@@ -14,8 +14,7 @@ struct WelcomeView: View {
             AppTheme.background.ignoresSafeArea()
 
             VStack(spacing: 0) {
-                Image("ic_logo")
-                    .resizable()
+                AppImage("ic_logo")
                     .scaledToFit()
                     .frame(width: 180)
                     .padding(.top, 80)
@@ -24,8 +23,7 @@ struct WelcomeView: View {
 
                 TabView(selection: $currentPage) {
                     ForEach(0..<3) { index in
-                        Image(images[index])
-                            .resizable()
+                        AppImage(images[index])
                             .scaledToFit()
                             .frame(height: 280)
                             .tag(index)

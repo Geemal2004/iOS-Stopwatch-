@@ -1,15 +1,21 @@
 import Foundation
+#if canImport(ThingSmartHomeKit)
 import ThingSmartHomeKit
+#endif
 
 class TuyaService {
     static let shared = TuyaService()
 
     private init() {}
 
-    func initialize(appKey: String, secretKey: String) {
+    func initialize() {
+        #if canImport(ThingSmartHomeKit)
+        let appKey = Bundle.main.object(forInfoDictionaryKey: "THING_SMART_APPKEY") as? String ?? ""
+        let secretKey = Bundle.main.object(forInfoDictionaryKey: "THING_SMART_SECRET") as? String ?? ""
         ThingSmartSDK.sharedInstance()?.start(withAppKey: appKey, secretKey: secretKey)
         #if DEBUG
         ThingSmartSDK.sharedInstance()?.debugMode = true
+        #endif
         #endif
     }
 }
@@ -20,10 +26,15 @@ class AuthService {
     private init() {}
 
     var isLoggedIn: Bool {
-        ThingSmartUser.sharedInstance().isLogin
+        #if canImport(ThingSmartHomeKit)
+        return ThingSmartUser.sharedInstance().isLogin
+        #else
+        return UserDefaults.standard.getSavedUser() != nil
+        #endif
     }
 
     func login(email: String, password: String, countryCode: String = "1", completion: @escaping (Result<User, Error>) -> Void) {
+        #if canImport(ThingSmartHomeKit)
         ThingSmartUser.sharedInstance()?.login(
             byEmail: countryCode,
             email: email,
@@ -47,9 +58,23 @@ class AuthService {
         } failure: { error in
             completion(.failure(error ?? TuyaError.unknown))
         }
+        #else
+        let user = User(
+            id: UUID().uuidString,
+            nickname: email.components(separatedBy: "@").first ?? "User",
+            email: email,
+            phone: nil,
+            avatarUrl: nil,
+            countryCode: countryCode,
+            timezoneId: "America/New_York"
+        )
+        UserDefaults.standard.saveUser(user)
+        completion(.success(user))
+        #endif
     }
 
     func register(email: String, password: String, countryCode: String = "1", completion: @escaping (Result<Void, Error>) -> Void) {
+        #if canImport(ThingSmartHomeKit)
         ThingSmartUser.sharedInstance()?.register(
             byEmail: countryCode,
             email: email,
@@ -59,9 +84,13 @@ class AuthService {
         } failure: { error in
             completion(.failure(error ?? TuyaError.unknown))
         }
+        #else
+        completion(.success(()))
+        #endif
     }
 
     func verifyOTP(email: String, code: String, countryCode: String = "1", completion: @escaping (Result<Void, Error>) -> Void) {
+        #if canImport(ThingSmartHomeKit)
         ThingSmartUser.sharedInstance()?.register(
             byEmail: countryCode,
             email: email,
@@ -72,12 +101,17 @@ class AuthService {
         } failure: { error in
             completion(.failure(error ?? TuyaError.unknown))
         }
+        #else
+        completion(.success(()))
+        #endif
     }
 
     func logout() {
+        #if canImport(ThingSmartHomeKit)
         ThingSmartUser.sharedInstance()?.loginOut({
         }) { error in
         }
+        #endif
         UserDefaults.standard.clearUser()
     }
 }

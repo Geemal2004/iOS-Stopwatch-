@@ -14,6 +14,30 @@
 		197BEE201C76E410005AD5E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197BEE1F1C76E410005AD5E2 /* Assets.xcassets */; };
 		197BEE231C76E410005AD5E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197BEE211C76E410005AD5E2 /* LaunchScreen.storyboard */; };
 		197BEE2D1C798B47005AD5E2 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197BEE2C1C798B47005AD5E2 /* Stopwatch.swift */; };
+		19AABB001 /* KeviltonSmartHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF01 /* KeviltonSmartHomeApp.swift */; };
+		19AABB002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF02 /* ContentView.swift */; };
+		19AABB003 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF03 /* AppTheme.swift */; };
+		19AABB004 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF04 /* Device.swift */; };
+		19AABB005 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF05 /* User.swift */; };
+		19AABB006 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF06 /* Scene.swift */; };
+		19AABB007 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF07 /* LoadingView.swift */; };
+		19AABB008 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF08 /* WelcomeView.swift */; };
+		19AABB009 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF09 /* LoginView.swift */; };
+		19AABB010 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF10 /* RegisterView.swift */; };
+		19AABB011 /* OTPVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF11 /* OTPVerificationView.swift */; };
+		19AABB012 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF12 /* MainTabView.swift */; };
+		19AABB013 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF13 /* HomeView.swift */; };
+		19AABB014 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF14 /* DevicesView.swift */; };
+		19AABB015 /* DeviceControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF15 /* DeviceControlView.swift */; };
+		19AABB016 /* ScenesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF16 /* ScenesView.swift */; };
+		19AABB017 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF17 /* SettingsView.swift */; };
+		19AABB018 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF18 /* AuthViewModel.swift */; };
+		19AABB019 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF19 /* HomeViewModel.swift */; };
+		19AABB020 /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF20 /* DeviceViewModel.swift */; };
+		19AABB021 /* TuyaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF21 /* TuyaService.swift */; };
+		19AABB022 /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF22 /* DeviceService.swift */; };
+		19AABB023 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF23 /* MockData.swift */; };
+		19AABB024 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AABBF24 /* ImageProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +62,30 @@
 		197BEE221C76E410005AD5E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		197BEE241C76E410005AD5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		197BEE2C1C798B47005AD5E2 /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		19AABBF01 /* KeviltonSmartHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeviltonSmartHomeApp.swift; sourceTree = "<group>"; };
+		19AABBF02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		19AABBF03 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		19AABBF04 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		19AABBF05 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		19AABBF06 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		19AABBF07 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		19AABBF08 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		19AABBF09 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		19AABBF10 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		19AABBF11 /* OTPVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationView.swift; sourceTree = "<group>"; };
+		19AABBF12 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		19AABBF13 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		19AABBF14 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
+		19AABBF15 /* DeviceControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceControlView.swift; sourceTree = "<group>"; };
+		19AABBF16 /* ScenesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenesView.swift; sourceTree = "<group>"; };
+		19AABBF17 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		19AABBF18 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		19AABBF19 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		19AABBF20 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
+		19AABBF21 /* TuyaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuyaService.swift; sourceTree = "<group>"; };
+		19AABBF22 /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceService.swift; sourceTree = "<group>"; };
+		19AABBF23 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		19AABBF24 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +133,84 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		19AABBG01 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				19AABBF03 /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		19AABBG02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				19AABBF04 /* Device.swift */,
+				19AABBF05 /* User.swift */,
+				19AABBF06 /* Scene.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		19AABBG03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				19AABBF07 /* LoadingView.swift */,
+				19AABBF08 /* WelcomeView.swift */,
+				19AABBF09 /* LoginView.swift */,
+				19AABBF10 /* RegisterView.swift */,
+				19AABBF11 /* OTPVerificationView.swift */,
+				19AABBF12 /* MainTabView.swift */,
+				19AABBF13 /* HomeView.swift */,
+				19AABBF14 /* DevicesView.swift */,
+				19AABBF15 /* DeviceControlView.swift */,
+				19AABBF16 /* ScenesView.swift */,
+				19AABBF17 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		19AABBG04 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				19AABBF18 /* AuthViewModel.swift */,
+				19AABBF19 /* HomeViewModel.swift */,
+				19AABBF20 /* DeviceViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		19AABBG05 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				19AABBF21 /* TuyaService.swift */,
+				19AABBF22 /* DeviceService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		19AABBG06 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				19AABBF23 /* MockData.swift */,
+				19AABBF24 /* ImageProvider.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		197BEE171C76E410005AD5E2 /* Stopwatch */ = {
 			isa = PBXGroup;
 			children = (
 				197BEE181C76E410005AD5E2 /* AppDelegate.swift */,
+				19AABBF01 /* KeviltonSmartHomeApp.swift */,
+				19AABBF02 /* ContentView.swift */,
 				197BEE1A1C76E410005AD5E2 /* ViewController.swift */,
 				197BEE2C1C798B47005AD5E2 /* Stopwatch.swift */,
+				19AABBG01 /* Theme */,
+				19AABBG02 /* Models */,
+				19AABBG03 /* Views */,
+				19AABBG04 /* ViewModels */,
+				19AABBG05 /* Services */,
+				19AABBG06 /* Utils */,
 				197BEE1C1C76E410005AD5E2 /* Main.storyboard */,
 				197BEE1F1C76E410005AD5E2 /* Assets.xcassets */,
 				197BEE211C76E410005AD5E2 /* LaunchScreen.storyboard */,
@@ -212,9 +332,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				197BEE1B1C76E410005AD5E2 /* ViewController.swift in Sources */,
-				197BEE2D1C798B47005AD5E2 /* Stopwatch.swift in Sources */,
 				197BEE191C76E410005AD5E2 /* AppDelegate.swift in Sources */,
+				19AABB001 /* KeviltonSmartHomeApp.swift in Sources */,
+				19AABB002 /* ContentView.swift in Sources */,
+				19AABB003 /* AppTheme.swift in Sources */,
+				19AABB004 /* Device.swift in Sources */,
+				19AABB005 /* User.swift in Sources */,
+				19AABB006 /* Scene.swift in Sources */,
+				19AABB007 /* LoadingView.swift in Sources */,
+				19AABB008 /* WelcomeView.swift in Sources */,
+				19AABB009 /* LoginView.swift in Sources */,
+				19AABB010 /* RegisterView.swift in Sources */,
+				19AABB011 /* OTPVerificationView.swift in Sources */,
+				19AABB012 /* MainTabView.swift in Sources */,
+				19AABB013 /* HomeView.swift in Sources */,
+				19AABB014 /* DevicesView.swift in Sources */,
+				19AABB015 /* DeviceControlView.swift in Sources */,
+				19AABB016 /* ScenesView.swift in Sources */,
+				19AABB017 /* SettingsView.swift in Sources */,
+				19AABB018 /* AuthViewModel.swift in Sources */,
+				19AABB019 /* HomeViewModel.swift in Sources */,
+				19AABB020 /* DeviceViewModel.swift in Sources */,
+				19AABB021 /* TuyaService.swift in Sources */,
+				19AABB022 /* DeviceService.swift in Sources */,
+				19AABB023 /* MockData.swift in Sources */,
+				19AABB024 /* ImageProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

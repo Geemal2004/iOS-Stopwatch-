@@ -45,7 +45,7 @@
 		<false/>
 	</dict>
 	<key>THING_SMART_APPKEY</key>
-	<string>$(f4p7sv5uhaecj3qkyaar)</string>
+	<string>$(4p7sv5uhaecj3qkyaar)</string>
 	<key>THING_SMART_SECRET</key>
 	<string>$(jj4mk84mrq7sf3ux9cpy7vfrf77qtu7p)</string>
 	<key>com.google.android.geo.API_KEY</key>

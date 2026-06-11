@@ -2,7 +2,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/TuyaInc/TuyaPublicSpecs.git'
 source 'https://github.com/tuya/tuya-pod-specs.git'
 
-platform :ios, '12.0'
+platform :ios, '15.0'
 
 target 'Stopwatch' do
   use_frameworks!
